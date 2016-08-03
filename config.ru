@@ -12,4 +12,4 @@ Thread.new do
   end
 end
 
-run Speaker::Web
+#run Speaker::Web
