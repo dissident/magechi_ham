@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require './web'
+require './magechi_ham_bot'
 
 Thread.new do
   begin

@@ -14,3 +14,5 @@ module Speaker
   end
 end
 
+
+Speaker::MagechiHamBot.run
