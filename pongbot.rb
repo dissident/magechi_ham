@@ -1,15 +1,16 @@
 require 'slack-ruby-bot'
 
-class MagechiHamBot < SlackRubyBot::Bot
+module Speaker
+  class MagechiHamBot < SlackRubyBot::Bot
 
-  command 'ping' do |client, data, match|
-    client.say(text: 'иди ка ты нахуй!', channel: data.channel)
+    command 'ping' do |client, data, match|
+      client.say(text: 'иди ка ты нахуй!', channel: data.channel)
+    end
+
+    command 'hui' do |client, data, match|
+      client.say(text: 'ты сам хуй!', channel: data.channel)
+    end
+
   end
-
-  command 'hui' do |client, data, match|
-    client.say(text: 'ты сам хуй!', channel: data.channel)
-  end
-
 end
 
-MagechiHamBot.run

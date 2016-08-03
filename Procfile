@@ -1,1 +1,1 @@
-web: bundle exec ruby pongbot.rb
+web: bundle exec puma
